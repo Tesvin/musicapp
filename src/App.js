@@ -6,9 +6,9 @@ import './App.css';
 //const url = "https://itunes.apple.com/search?term=the%20grateful%20dead"
 
 function App() {
-  let [search, setSearch] = useState("");
-  let [message, setMessage] = useState('Search for Songs');
-  let [data, setData] = useState([]);
+  let [search, setSearch] = useState("")
+  let [message, setMessage] = useState('Search for Songs')
+  let [data, setData] = useState([])
 
 const API_URL = "https://itunes.apple.com/search?term=";
 
@@ -25,12 +25,12 @@ useEffect(() => {
       setMessage("Content not found")
     }
   }
-  fetchData();
+  fetchData()
   }
 }, [search])
 
 const handleSearch = (e, term) => {
-  e.preventDefault();
+  e.preventDefault()
   setSearch(term)
 }
 
@@ -38,7 +38,9 @@ const handleSearch = (e, term) => {
     <div className="App">
       <Searchbar handleSearch={handleSearch}/>
         {message}
-      <Gallery data={data}/>
+      <div className='data'>
+        <Gallery data={data}/>
+      </div>
     </div>
   );
 }

@@ -1,9 +1,9 @@
-import Galleryitems from './Galleryitem';
+import Galleryitem from './Galleryitem';
 
 function Gallery(props) {
   const display = props.data.map((item, index) => {
     return (
-      <Galleryitems item={item} key={index}/>
+      <Galleryitem item={item} key={index}/>
     )
   })
 
@@ -15,3 +15,12 @@ function Gallery(props) {
 }
 
 export default Gallery
+
+//artistName
+//trackName
+//trackViewUrl
+//artworkUrl100
+//artworkUrl130
+//trackTimeMillis
+//previewUrl
+//collectionName
