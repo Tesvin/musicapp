@@ -4,10 +4,10 @@ function Searchbar(props) {
     let [searchTerm, setSearchTerm] = useState("")
 
   return (
-    <form className='form-wrapper' onSubmit={(e) => props.handleSearch(e, searchTerm)}>
-        <input id='search' className='' type="text" placeholder="Search Songs" 
+    <form onSubmit={(e) => props.handleSearch(e, searchTerm)}>
+        <input id='search' className='input' type="text" placeholder="Search Songs or Artist" 
         onChange={(e) => setSearchTerm(e.target.value)}/>
-        <input type="submit" value='go' id='submit'/>
+        <input type="submit" value='search' className='submit'/>
     </form>
   )
 }
