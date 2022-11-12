@@ -7,9 +7,10 @@ body {
 }
 
 .simple {
+  display: inline-block;
   max-width: 10rem;
   width: 20rem;
-  height: 20rem;
+  height: 15rem;
   padding: 2px;
   background-color: white;
   border-radius: 20px;
@@ -18,13 +19,14 @@ body {
 }
 
 /*detailView */
-
+/* 
 .imgcontainer {
+  display: inline-block;
   width: 20rem;
   height: 20rem;
   max-width: 200px;
   margin: 10px;
-}
+} */
 
 .trackimage {
   max-width: 10rem;

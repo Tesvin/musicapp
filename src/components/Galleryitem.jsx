@@ -33,8 +33,8 @@ function Galleryitem(props) {
     )
   }
   return (
-    <div onClick={() => setView(!view)}
-      style={{ 'display': 'inline-block' }}>
+    <div onClick={() => setView(!view)} 
+    style={{ 'display': 'inline-block' }}>
 
       {view ? simpleView() : detailView()}
 

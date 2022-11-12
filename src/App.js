@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Gallery from './components/Gallery';
 import Searchbar from './components/Searchbar';
+import { DataContext } from './context/DataContext';
 import './App.css';
 
 //const url = "https://itunes.apple.com/search?term=the%20grateful%20dead"
@@ -36,11 +37,12 @@ const handleSearch = (e, term) => {
 
   return (
     <div className="App">
-      <Searchbar handleSearch={handleSearch}/>
         {message}
-      <div className='data'>
-        <Gallery data={data}/>
-      </div>
+      <Searchbar handleSearch={handleSearch}/>
+      <DataContext.Provider value={data}>
+        <Gallery/>
+      </DataContext.Provider>
+      
     </div>
   );
 }
