@@ -42,16 +42,8 @@ const handleSearch = (e, term) => {
       <DataContext.Provider value={data}>
         <Gallery/>
       </DataContext.Provider>
-      
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
