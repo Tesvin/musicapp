@@ -26,7 +26,7 @@ useEffect(() => {
       setMessage("Content not found")
     }
   }
-  fetchData()
+  fetchData() 
   }
 }, [search])
 
